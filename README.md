@@ -18,6 +18,7 @@ L'espace et l'accrochage sont durs, fixes et minimaliste; les contenus sont rich
 
 
 « Le rhizome n’a pas de centre, il est partout. » Gilles Deleuze et Félix Guattari. 
+"Faites rhizome et pas racine ! (...) Ne soyez pas un ni multiple, soyez des multiplicités ! Faites la ligne et jamais le point ! Le rhizome est une célébration de la pensée en réseau, il est transversal, tentaculaire et nomade, contrairement à la racine, unique et sédentaire."
 
 QRCODE
 
