@@ -3,8 +3,6 @@ Code for the superposition(s) installation @lecolededesign
 
 --
 
-VISUEL(s)
-
 Superposition(s) - Escalier Rhizomatique : un flux d'expériences augmentées
 
 
