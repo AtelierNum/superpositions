@@ -14,35 +14,39 @@
 
 <body>
     <header>
-        <h1>SUPERPOSITION(s)</h1>
-        <h2>Les projets</h2>
+        <h1 class="red-title">SUPERPOSITION(s)</h1>
+        <p> Ce projet a été créé en 2024 pour le cours "Réalités et Représentation" en graphisme 3ème année.</p>
+        <p> Partagez votre parcours et vos découvertes sur les réseaux sociaux en utilisant la mention
+            @ateliernum et les hashtags #superpositions #arjs #aframe</p>
+        <h2 class="red-title">Les projets</h2>
     </header>
 
     <main>
         <section>
-            <h3>En descente</h3>
+            <h3 class="red-title">En descente</h3>
             <div class="card-container">
                 <a href="#" class="card">
                     <img src="./Projet_ApresNousLeSilence/192509_I complet Ju.jpg" alt="Image du projet Après nous le silence">
                     <div class="card-content">
-                        <h2>Après nous le silence</h2>
+                        <h2 class="red-title">Après nous le silence</h2>
                         <p>Plonger dans un monde où l’activité humaine a détruit tout ce que la nature avait a offrir.
                             L’industrie, la pollution, les traitements chimiques ont ravagé la nature pourtant si paisible.
                             Cette exposition vous propose de plonger dans une réalité qui pourrait être la notre.</p>
                         <p class="project-info"><i>Exposition dystopique créé par Lou-Anne Pettenati, Lorène Toubeaux et Justine Némès.
                                 Projet de réalité augmentée, janvier 2025, Graphisme 3ème année.</i></p>
+                        <button class="launch-button" onclick="openNewPage('./Projet_ApresNousLeSilence/index.html')">Launch Experiment</button>
                     </div>
                 </a>
             </div>
         </section>
 
         <section>
-            <h3>En montée</h3>
+            <h3 class="red-title">En montée</h3>
             <div class="card-container">
                 <a href="#" class="card">
                     <img src="./Projet_LeSecretDeLycaon/192270_fond-pres.jpg" alt="Image du projet Le Secret de Lycaon">
                     <div class="card-content">
-                        <h2>Le Secret de Lycaon</h2>
+                        <h2 class="red-title">Le Secret de Lycaon</h2>
                         <p>Voyagez en Grèce Antique pour résoudre le mystère qui plane sur Lycaon et sa famille.
                             À deux, suivez Etra, votre guide, en rassemblant les indices pour révéler la vérité.
                             Le secret de Lycaon est un jeu d’enquête immersif, qui nécessite deux joueurs.
@@ -50,31 +54,34 @@
                             de l’histoire</p>
                         <p class="project-info"><i>Projet créé par Keziah Camy-Portenabe, Cylian Guibert et Emy Morel, janvier 2025, Graphisme 3ème
                                 année.</i></p>
+                         <button class="launch-button" onclick="openNewPage('./Projet_LeSecretDeLycaon/index.html')">Launch Experiment</button>
                     </div>
                 </a>
 
                 <a href="#" class="card">
                     <img src="./Projet_UneHistoire/192294_visuel pre╠üsentation.jpg" alt="Image du projet Une histoire ...">
                     <div class="card-content">
-                        <h2>Une histoire ...</h2>
+                        <h2 class="red-title">Une histoire ...</h2>
                         <p>Au fil du parcours, laissez-vous guider par ces indices visuels et sensoriels. Observez, associez, devinez, une histoire que vous connaissez surement traverse cette exposition.
                             À mi-chemin, tout va s’éclairer et vous découvrirez la révélation.
                             Mais l’expérience ne s’arrête pas là. Entre parallaxe et pop art, la deuxième partie vous invite à redécouvrir cet univers sous un tout nouvel angle.
                             Ouvrez grand les yeux et laissez-vous surprendre.</p>
                         <p class="project-info"><i>Projet créé par Marie Dassonneville, Alice Sauvetre et Charlotte Seyeux, janvier 2025, Graphisme 3ème
                                 année.</i></p>
+                         <button class="launch-button" onclick="openNewPage('./Projet_UneHistoire/index.html')">Launch Experiment</button>
                     </div>
                 </a>
 
                 <a href="#" class="card">
                     <img src="./Projet_LExtinctionDuSoleil/192243_imagepr├®sentationGroupe2.jpg" alt="Image du projet L'extinction du soleil">
                     <div class="card-content">
-                        <h2>L'extinction du soleil</h2>
+                        <h2 class="red-title">L'extinction du soleil</h2>
                         <p>Le scientifique Docteur Strauss cause l'extinction du soleil, par ses recherches et expériences scientifiques, cherchant à récupérer son énergie nucléaire.
                             Le scientifique a accéléré malgré lui l'extinction de la vie humaine sur terre. Nous arrivons en 2025 dans sa maison désaffectée et découvrons comment la
                             flore et la faune se sont adaptées à la vie plongée dans le noir. </p>
                         <p class="project-info"><i>Projet créé par Marion Launay, Jeanne Launay, Solène Le Corfec et Léna Pigeard, janvier 2025, Graphisme 3ème
                                 année.</i></p>
+                        <button class="launch-button" onclick="openNewPage('./Projet_LExtinctionDuSoleil/index.html')">Launch Experiment</button>
                     </div>
                 </a>
             </div>
@@ -84,31 +91,8 @@
 
 
     <script>
-        let joueurChoisi = ''; // Variable globale pour stocker le joueur sélectionné
-
-        // Fonction pour afficher le pop-up
-        function showPopup() {
-            document.getElementById("popup").style.display = "flex";
-        }
-
-        // Fonction pour choisir le joueur et masquer le pop-up
-        function choosePlayer(player) {
-            //joueurChoisi = player; // Assigner le joueur choisi à la variable globale
-
-            if (player == "Joueur 1") {
-                window.open("./joueur1.html", '_blank').focus();
-                console.log("1")
-            }
-
-            if (player == "Joueur 2") {
-                window.open("./joueur2.html", '_blank').focus();
-                console.log("2")
-            }
-        }
-
-        // Cette fonction permet de réutiliser la variable joueurChoisi
-        function getChosenPlayer() {
-            return joueurChoisi;
+        function openNewPage(pageURL) {
+            window.open(pageURL, '_blank').focus(); // Open in a new tab/window and focus it
         }
     </script>
 </body>
