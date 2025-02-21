@@ -1,0 +1,107 @@
+/* styles.css */
+
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0; /* Remove default body margin */
+    background-color: #f8f8f8; /* Light background */
+    color: #333; /* Dark text color */
+    line-height: 1.6; /* Improve readability */
+    padding-top: 1rem; /* Add space on top */
+    padding-bottom: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger title */
+    font-weight: 700; /* Bold */
+    margin-bottom: 0.5rem;
+    color: #000000; /*  Blue color */
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    padding-left: 20px; /* Consistent padding with cards */
+    color: #000000;  /* Accent color for section headings */
+}
+
+section {
+    margin-bottom: 3rem; /* Space between sections */
+}
+
+
+/* Card Container Styles */
+.card-container {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  gap: 2rem; /* Consistent spacing between cards */
+  padding: 0 20px; /* Horizontal padding */
+  width: auto; /* Use auto width for better responsiveness */
+  margin: 0; /* Center the container */
+}
+
+/* Card Styles */
+.card {
+    display: flex;
+    flex-direction: column; /* Stack image and content vertically */
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+    overflow: hidden; /* Prevent image overflow */
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s ease; /* Smooth hover */
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%; /* Image takes full width of card */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-bottom: 1px solid #eee; /* Subtle separator */
+}
+
+.card-content {
+    padding: 20px; /* Consistent padding */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between title, paragraph, and info */
+    flex-grow: 1; /* Allow content to fill remaining space */
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0; /* Remove default margins */
+}
+
+.card p {
+    font-size: 1rem;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.project-info {
+    font-size: 0.9rem;
+    color: #777; /* Lighter color for project info */
+    margin-top: auto; /* Push to the bottom of the card content */
+}
